@@ -7,75 +7,78 @@ package com.ut.trivia.QuestionAnswers;
  */
 public class FoodCorrectAnswers {
 	
-	private String answer_one = "a";
-	private String answer_two = "a";
-	private String answer_three = "a";
-	private String answer_four = "a";
-	private String answer_five = "c";
-	private String answer_six = "b";
-	private String answer_seven = "a";
-	private String answer_eight = "b";
-	private String answer_nine = "b";
-	private String answer_ten = "b";
-	public String getAnswer_one() {
-		return answer_one;
+	private String answer_1 = "a";
+	private String answer_2 = "a";
+	private String answer_3 = "a";
+	private String answer_4 = "a";
+	private String answer_5 = "c";
+	private String answer_6 = "b";
+	private String answer_7 = "a";
+	private String answer_8 = "b";
+	private String answer_9 = "b";
+	private String answer_10 = "b";
+	public String getAnswer_1() {
+		return answer_1;
 	}
-	public void setAnswer_one(String answer_one) {
-		this.answer_one = answer_one;
+	public void setAnswer_1(String answer_1) {
+		this.answer_1 = answer_1;
 	}
-	public String getAnswer_two() {
-		return answer_two;
+	public String getAnswer_2() {
+		return answer_2;
 	}
-	public void setAnswer_two(String answer_two) {
-		this.answer_two = answer_two;
+	public void setAnswer_2(String answer_2) {
+		this.answer_2 = answer_2;
 	}
-	public String getAnswer_three() {
-		return answer_three;
+	public String getAnswer_3() {
+		return answer_3;
 	}
-	public void setAnswer_three(String answer_three) {
-		this.answer_three = answer_three;
+	public void setAnswer_3(String answer_3) {
+		this.answer_3 = answer_3;
 	}
-	public String getAnswer_four() {
-		return answer_four;
+	public String getAnswer_4() {
+		return answer_4;
 	}
-	public void setAnswer_four(String answer_four) {
-		this.answer_four = answer_four;
+	public void setAnswer_4(String answer_4) {
+		this.answer_4 = answer_4;
 	}
-	public String getAnswer_five() {
-		return answer_five;
+	public String getAnswer_5() {
+		return answer_5;
 	}
-	public void setAnswer_five(String answer_five) {
-		this.answer_five = answer_five;
+	public void setAnswer_5(String answer_5) {
+		this.answer_5 = answer_5;
 	}
-	public String getAnswer_six() {
-		return answer_six;
+	public String getAnswer_6() {
+		return answer_6;
 	}
-	public void setAnswer_six(String answer_six) {
-		this.answer_six = answer_six;
+	public void setAnswer_6(String answer_6) {
+		this.answer_6 = answer_6;
 	}
-	public String getAnswer_seven() {
-		return answer_seven;
+	public String getAnswer_7() {
+		return answer_7;
 	}
-	public void setAnswer_seven(String answer_seven) {
-		this.answer_seven = answer_seven;
+	public void setAnswer_7(String answer_7) {
+		this.answer_7 = answer_7;
 	}
-	public String getAnswer_eight() {
-		return answer_eight;
+	public String getAnswer_8() {
+		return answer_8;
 	}
-	public void setAnswer_eight(String answer_eight) {
-		this.answer_eight = answer_eight;
+	public void setAnswer_8(String answer_8) {
+		this.answer_8 = answer_8;
 	}
-	public String getAnswer_nine() {
-		return answer_nine;
+	public String getAnswer_9() {
+		return answer_9;
 	}
-	public void setAnswer_nine(String answer_nine) {
-		this.answer_nine = answer_nine;
+	public void setAnswer_9(String answer_9) {
+		this.answer_9 = answer_9;
 	}
-	public String getAnswer_ten() {
-		return answer_ten;
+	public String getAnswer_10() {
+		return answer_10;
 	}
-	public void setAnswer_ten(String answer_ten) {
-		this.answer_ten = answer_ten;
+	public void setAnswer_10(String answer_10) {
+		this.answer_10 = answer_10;
 	}
+	
+	
+	
 
 }

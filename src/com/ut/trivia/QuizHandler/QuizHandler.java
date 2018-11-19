@@ -31,12 +31,12 @@ public class QuizHandler {
 					           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer1_optionD());
 			answer = scan.nextLine();
 			
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_one())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_1())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-						           GeneralConstants.SPACE +correctAnswers.getAnswer_one());
+						           GeneralConstants.SPACE +correctAnswers.getAnswer_1());
 			}
 			
 			// Question 2
@@ -46,12 +46,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer2_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer2_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_two())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_2())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_two());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_2());
 			}
 			
 			//Question 3
@@ -61,12 +61,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer3_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer3_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_three())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_3())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_three());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_3());
 			}
 			
 			//Question 4
@@ -76,12 +76,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer4_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer4_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_four())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_4())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_four());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_4());
 			}
 			
 			//Question 5
@@ -91,12 +91,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer5_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer5_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_five())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_5())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_five());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_5());
 			}
 			
 			//Question 6
@@ -106,12 +106,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer6_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer6_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_six())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_6())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_six());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_6());
 			}
 			
 			//Question 7
@@ -121,12 +121,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer7_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer7_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_seven())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_7())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_seven());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_7());
 			}
 			
 			//Question 8
@@ -136,12 +136,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer8_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer8_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_eight())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_8())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_eight());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_8());
 			}
 			
 			//Question 9
@@ -151,12 +151,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer9_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer9_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_nine())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_9())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_nine());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_9());
 			}
 			
 			//Question 10
@@ -166,12 +166,12 @@ public class QuizHandler {
 			           GeneralConstants.C+ GeneralConstants.SPACE + foodanswers.getAnswer10_optionC() + GeneralConstants.SPACE+
 			           GeneralConstants.D+ GeneralConstants.SPACE + foodanswers.getAnswer10_optionD());
 			answer = scan.nextLine();
-			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_ten())) {
+			if(answer.trim().toLowerCase().equals(correctAnswers.getAnswer_10())) {
 				System.out.println(GeneralConstants.CORRECTANSWER);
 				correctCounter++;
 			}else {
 				System.out.println(GeneralConstants.INCORRECTANSWER + GeneralConstants.DOT + GeneralConstants.SPACE+ GeneralConstants.CORRECTANSMESSAGE+
-				           GeneralConstants.SPACE +correctAnswers.getAnswer_ten());
+				           GeneralConstants.SPACE +correctAnswers.getAnswer_10());
 			}
 			
 			score = calculateScore(correctCounter);

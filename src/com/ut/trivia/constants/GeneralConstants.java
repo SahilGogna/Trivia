@@ -46,7 +46,7 @@ public interface GeneralConstants {
 	
 	//error constants
 	public static final String INCORRECTANSWER = "Wrong Answer!";
-	public static final String NUMBERFORMATEXCEPTIONMESSAGE = "Only numbers allowed!";
+	public static final String NUMBERFORMATEXCEPTIONMESSAGE = "Wrong format entered!";
 	
 
 }
