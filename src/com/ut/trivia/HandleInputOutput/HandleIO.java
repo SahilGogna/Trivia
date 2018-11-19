@@ -4,11 +4,20 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import com.ut.trivia.constants.GeneralConstants;
-
+/**
+ * this class handles the input and output functions
+ * 
+ * @author sahilgogna
+ * Nov 18, 2018
+ */
 public class HandleIO {
 	
 	Scanner scan = new Scanner(System.in);
-	
+	/**
+	 * this method handles user input
+	 * 
+	 * @return choice entered by the user as a String
+	 */
 	public String HandleInput() {
 		String choice = null;
 		try {
@@ -28,6 +37,9 @@ public class HandleIO {
 		return choice;
 	}
 	
+	/**
+	 * this method handles the user output
+	 */
     public void HandleOutput() {
 		
 	}

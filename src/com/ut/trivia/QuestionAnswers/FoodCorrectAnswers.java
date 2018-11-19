@@ -1,5 +1,10 @@
 package com.ut.trivia.QuestionAnswers;
 
+/**
+ * this class contains the correct answers for category food
+ * @author sahilgogna
+ * Nov 18, 2018
+ */
 public class FoodCorrectAnswers {
 	
 	private String answer_one = "a";

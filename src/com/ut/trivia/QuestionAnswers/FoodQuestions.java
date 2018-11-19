@@ -1,5 +1,9 @@
 package com.ut.trivia.QuestionAnswers;
-
+/**
+ * this class contains all the initial questions
+ * @author sahilgogna
+ * Nov 18, 2018
+ */
 public class FoodQuestions {
 	
 	private String Question1 = "In what country would you find shish kebab as an everyday food?";

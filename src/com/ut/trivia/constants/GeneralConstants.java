@@ -1,5 +1,11 @@
 package com.ut.trivia.constants;
 
+/**
+ * this interface contains the general constants used throughout the application
+ * 
+ * @author sahilgogna
+ * Nov 18, 2018
+ */
 public interface GeneralConstants {
 	
 	//general constants

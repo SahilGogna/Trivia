@@ -1,5 +1,9 @@
 package com.ut.trivia.QuestionAnswers;
-
+/**
+ * this class contains all the options for the answers for questions for category food
+ * @author sahilgogna
+ * Nov 18, 2018
+ */
 public class FoodAnswers {
 	private String Answer1_optionA = "Turkey";
 	private String Answer1_optionB = "China";
