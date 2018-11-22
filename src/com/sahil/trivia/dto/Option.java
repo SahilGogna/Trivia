@@ -6,16 +6,16 @@ package com.sahil.trivia.dto;
  */
 public class Option {
 
-    private int answerId;
+    private int optionId;
 
     private String text;
 
-    public int getAnswerId() {
-        return answerId;
+    public int getOptionId() {
+        return optionId;
     }
 
-    public void setAnswerId(int answerId) {
-        this.answerId = answerId;
+    public void setOptionId(int optionId) {
+        this.optionId = optionId;
     }
 
     public String getText() {
@@ -26,8 +26,8 @@ public class Option {
         this.text = text;
     }
 
-    public Option(int answerId, String text) {
-        this.answerId = answerId;
+    public Option(int optionId, String text) {
+        this.optionId = optionId;
         this.text = text;
     }
 }

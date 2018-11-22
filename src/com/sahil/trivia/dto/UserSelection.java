@@ -42,7 +42,7 @@ public class UserSelection {
             List<Question> questions = AppData.getQuestionsByCategory().get(categoryWise.getKey());
             for (Map.Entry<Integer, Integer> questionWise : categoryWise.getValue().entrySet()) {
                 System.out.println("Question "+questionWise.getKey() + GeneralConstants.DOR_SPACE + questions.get(questionWise.getKey()).getText());
-                System.out.println("Answer "+questionWise.getValue() + GeneralConstants.DOR_SPACE + questions.get(questionWise.getKey()).getOptionList().get(questionWise.getValue()).getText());
+                System.out.println("Answer "+(char) (65 + questionWise.getValue()) + GeneralConstants.DOR_SPACE + questions.get(questionWise.getKey()).getOptionList().get(questionWise.getValue()).getText());
             }
 
         }

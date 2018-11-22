@@ -54,7 +54,7 @@ public class AppStarter {
         for (Question question : AppData.getQuestionsByCategory().get(category)) {
             System.out.println(question.getQuestionId() + GeneralConstants.DOR_SPACE + question.getText());
             for (Option option : question.getOptionList()) {
-                System.out.println((char) (65 + option.getAnswerId()) + GeneralConstants.DOR_SPACE + option.getText());
+                System.out.println((char) (65 + option.getOptionId()) + GeneralConstants.DOR_SPACE + option.getText());
             }
         }
     }
