@@ -1,7 +1,4 @@
-package com.sahil.trivia.data;
-
-import com.sahil.trivia.dto.Option;
-import com.sahil.trivia.dto.Question;
+package com.ut.trivia.data;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -10,8 +7,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import com.ut.trivia.dto.Option;
+import com.ut.trivia.dto.Question;
+
 /**
- * @author Nagarro
+ * @author sahilgogna
  * @since November 22, 2018
  */
 public class AppData {
@@ -59,7 +59,9 @@ public class AppData {
                         Option option = new Option(k, optionText);
                         options.add(option);
                     }
+                    int correctOption = scanner.nextInt();
                     question.setOptionList(options);
+                    question.setCorrectOption(correctOption);
                     questionsByCategory.get(i).add(question);
                 }
             }

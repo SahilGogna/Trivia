@@ -1,9 +1,9 @@
-package com.sahil.trivia.dto;
+package com.ut.trivia.dto;
 
 import java.util.List;
 
 /**
- * @author Nagarro
+ * @author sahilgogna
  * @since November 22, 2018
  */
 public class Question {
@@ -13,6 +13,8 @@ public class Question {
     private String text;
 
     private List<Option> optionList;
+    
+    private int correctOption;
 
     public Question(int questionId, String text) {
         this.questionId = questionId;
@@ -42,4 +44,13 @@ public class Question {
     public void setOptionList(List<Option> optionList) {
         this.optionList = optionList;
     }
+
+	public int getCorrectOption() {
+		return correctOption;
+	}
+
+	public void setCorrectOption(int correctOption) {
+		this.correctOption = correctOption;
+	}
+    
 }

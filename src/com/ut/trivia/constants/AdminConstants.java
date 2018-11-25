@@ -5,6 +5,10 @@ public interface AdminConstants {
 	//Admin general constants
 	public static final String WELCOME_MESSAGE = "Welcome admin!";
 	
+	public static final String DASH = "--------------";
+	
+	public static final int ADMIN_CODE = 232;
+	
 	public static final String ENTER_OPTION = "Enter one option to:";
 	
 	public static final String OPTION_1 = "1. Add new question and answer for the (selected Trivia category)"; 
@@ -17,7 +21,26 @@ public interface AdminConstants {
 	
 	public static final String ENTER_CATEGORY = "Enter Category ";
 	
-	public static final String EDIT_REQUEST = "Enter question number you want to edit.";
+	public static final String EDIT_REQUEST = "Here the Questions. Please enter question number you want to edit.";
+	
+	public static final String ADD_REQUEST = "Please enter new question.";
+	
+	public static final String CORRECT_ANS_REQ = "Please enter which of the above options is correct?";
+	
+	public static final String MODE_ADMIN = "Mode: Admin";
+	
+	public static final String DEL_QUES_REQ = "Here the Questions. Please enter question number you want to delete.";
+	
+	public static final String EDIT_QUES_REQ = "Please enter edited question!";
+	
+	public static final String NUM_OF_OPT_REQ = "Please enter number of options.";
+	
+	public static final String NUM_OF_OPT_ERROR = "Please enter number of options between 1-5";
+	
+	public static final String ENTER_OPT_REQ = "Please enter option ";
+	
+	
+	
 	
 	public static final String GET_QUESTION = "getQuestion";
 	
@@ -47,5 +70,5 @@ public interface AdminConstants {
 	
 	public static final String OPTION_D_REQUEST = "Enter option d";
 	
-	public static final String CORRECT_ANS_REQ = "Enter correct option";
+	
 }

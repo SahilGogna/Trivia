@@ -11,7 +11,8 @@ public interface GeneralConstants {
 	//general constants
 	public static final String DOT = ".";
 	public static final String SPACE = " ";
-	public static final String DOR_SPACE = ". ";
+	public static final String DOT_SPACE = ". ";
+	public static final String MODE_USER = "Mode: User";
 
 	//general messages
 	public static final String START_MESSAGE = "To start Trivia app. - enter one option (or special code to manage it):";
@@ -39,6 +40,12 @@ public interface GeneralConstants {
 	public static final String NINE = "9";
 	public static final String TEN = "10";
 	
+	public static final int MINUS_ONE_INT = -1;
+	public static final int ZERO_INT = 0;
+	public static final int ONE_INT = 1;
+	public static final int FOUR_INT = 4;
+	public static final int FIVE_INT = 5;
+	
 	//options
 	public static final String A = "a";
 	public static final String B = "b";
@@ -47,7 +54,8 @@ public interface GeneralConstants {
 	
 	//error constants
 	public static final String INCORRECTANSWER = "Wrong Option!";
-	public static final String NUMBERFORMATEXCEPTIONMESSAGE = "Wrong format entered!";
+	public static final String NUMBER_IP_ERROR_MESSAGE = "Please enter number only!";
+	public static final String ENTER_RIGHT_CHOICE = "Please enter right choice.";
 	
 
 }

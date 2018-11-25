@@ -1,7 +1,7 @@
-package com.sahil.trivia.dto;
+package com.ut.trivia.dto;
 
 /**
- * @author Nagarro
+ * @author sahilgogna
  * @since November 22, 2018
  */
 public class Option {

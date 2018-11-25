@@ -32,9 +32,9 @@ public class HandleIO {
 			System.out.println(GeneralConstants.ENTER_CHOICE);
 			choice = scan.nextLine();
 		}catch(InputMismatchException exception) {
-			System.out.println(GeneralConstants.NUMBERFORMATEXCEPTIONMESSAGE);
+			System.out.println(GeneralConstants.NUMBER_IP_ERROR_MESSAGE);
 		}catch(Exception exception) {
-			System.out.println(GeneralConstants.NUMBERFORMATEXCEPTIONMESSAGE);
+			System.out.println(GeneralConstants.NUMBER_IP_ERROR_MESSAGE);
 		}
 		return choice;
 	}
@@ -55,9 +55,9 @@ public class HandleIO {
 			System.out.println(AdminConstants.ENTER_OPTION);
 			choice = scan.nextLine();
 		}catch(InputMismatchException exception) {
-			System.out.println(GeneralConstants.NUMBERFORMATEXCEPTIONMESSAGE);
+			System.out.println(GeneralConstants.NUMBER_IP_ERROR_MESSAGE);
 		}catch(Exception exception) {
-			System.out.println(GeneralConstants.NUMBERFORMATEXCEPTIONMESSAGE);
+			System.out.println(GeneralConstants.NUMBER_IP_ERROR_MESSAGE);
 		}
 		return choice;
 	}
