@@ -58,5 +58,7 @@ public interface GeneralConstants {
 	public static final String NUMBER_IP_ERROR_MESSAGE = "Please enter number only!";
 	public static final String ENTER_RIGHT_CHOICE = "Please enter right choice.";
 	
+	public static final String USER_OPTION_REQUEST = "Please enter your choice for this question";
+	
 
 }

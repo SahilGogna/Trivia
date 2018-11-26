@@ -5,11 +5,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import com.ut.trivia.UserOptions.GamePlayer;
 import com.ut.trivia.constants.AdminConstants;
 import com.ut.trivia.constants.GeneralConstants;
 import com.ut.trivia.data.AppData;
 import com.ut.trivia.dto.Option;
 import com.ut.trivia.dto.Question;
+import com.ut.trivia.dto.Results;
 
 public class HandleIpOp {
 
@@ -21,7 +23,7 @@ public class HandleIpOp {
 			do {
 				String cateGoryChoiceText = scanner.nextLine();
 				categoryChoice = Integer.parseInt(cateGoryChoiceText);
-				if ((categoryChoice < GeneralConstants.ZERO_INT || categoryChoice > AppData.getCategories().size())
+				if ((categoryChoice < GeneralConstants.ZERO_INT || categoryChoice > AppData.getCategories().size()+1)
 						&& categoryChoice != AdminConstants.ADMIN_CODE) {
 					categoryChoice = null;
 					System.out.println(GeneralConstants.ENTER_RIGHT_CHOICE);
@@ -187,13 +189,49 @@ public class HandleIpOp {
 	public static void printUserMode() {
 		System.out.println(GeneralConstants.MODE_USER);
 	}
+	
+	public static void printQuestionOptions(Question question) {
+		System.out.println(question.getQuestionId() + GeneralConstants.DOT_SPACE + question.getText());
+		for (Option option : question.getOptionList()) {
+          System.out.println( option.getOptionId() + GeneralConstants.DOT_SPACE + option.getText());
+      }
+	}
+	
+	public static int getUserOptionChoice(Scanner scanner, int numberOfChoices) {
+		System.out.println(GeneralConstants.USER_OPTION_REQUEST);
+		Integer userChoice = null;
+		try {
+			do {
+				String userChoiceText = scanner.nextLine();
+				userChoice = Integer.parseInt(userChoiceText);
+				if (userChoice < GeneralConstants.ZERO_INT || userChoice > numberOfChoices) {
+					userChoice = null;
+					System.out.println(GeneralConstants.ENTER_RIGHT_CHOICE);
+				}
+			} while (userChoice == null);
+		} catch (NumberFormatException e) {
+			System.out.println(GeneralConstants.NUMBER_IP_ERROR_MESSAGE);
+			e.printStackTrace();
+		}
+		return userChoice;
+	}
+	
+	public static void printFinalScores() {
+		System.out.println("Here are the results!");
+		System.out.println("Total number of games played: "+ GamePlayer.getResultList().size());
+		for(Results result: GamePlayer.getResultList()) {
+			System.out.println(result.getCategory() +"----"+ result.getScore()+"%");
+		}
+	}
 
-//    private static void printQuetions(int category) {
-//        for (Question question : AppData.getQuestionsByCategory().get(category)) {
-//            System.out.println(question.getQuestionId() + GeneralConstants.DOT_SPACE + question.getText());
-//            for (Option option : question.getOptionList()) {
-//                System.out.println((char) (64 + option.getOptionId()) + GeneralConstants.DOT_SPACE + option.getText());
-//            }
-//        }
-//    }
+	public static void printRightChoice(int correctOption) {
+		System.out.println("Wrong Answer! Correct option is :" + correctOption);
+		
+	}
+
+	public static void printCorrectOption() {
+		System.out.println("Correct Option!");
+		
+	}
+
 }
