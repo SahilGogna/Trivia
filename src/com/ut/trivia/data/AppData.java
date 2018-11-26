@@ -59,7 +59,7 @@ public class AppData {
                         Option option = new Option(k, optionText);
                         options.add(option);
                     }
-                    int correctOption = scanner.nextInt();
+                    int correctOption = Integer.parseInt(questionParts[2]);
                     question.setOptionList(options);
                     question.setCorrectOption(correctOption);
                     questionsByCategory.get(i).add(question);

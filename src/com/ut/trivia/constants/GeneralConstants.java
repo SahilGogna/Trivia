@@ -45,6 +45,7 @@ public interface GeneralConstants {
 	public static final int ONE_INT = 1;
 	public static final int FOUR_INT = 4;
 	public static final int FIVE_INT = 5;
+	public static final int SEVEN_INT = 7;
 	
 	//options
 	public static final String A = "a";
