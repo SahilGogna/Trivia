@@ -2,19 +2,24 @@ package com.ut.trivia.starter;
 
 import java.util.Scanner;
 
-import com.ut.trivia.AdminOptions.AdminFunctionalities;
+import com.ut.trivia.AdminOptions.AdminFunctionalitiesImpl;
 import com.ut.trivia.HandleInputOutput.HandleIpOp;
 import com.ut.trivia.UserOptions.GamePlayer;
 import com.ut.trivia.constants.AdminConstants;
 import com.ut.trivia.constants.GeneralConstants;
+import com.ut.trivia.data.AppData;
 
 /**
  * @author sahilgogna
  * @since November 22, 2018
  * 
- * this is the starting point of the application
+ * 
  */
 public class AppStarter {
+	/**
+	 * this is the starting point of the application
+	 * 
+	 */
 
     public static void main(String[] args) {
     	
@@ -23,28 +28,28 @@ public class AppStarter {
             int userChoice = GeneralConstants.MINUS_ONE_INT;
         	do {
         		userChoice = HandleIpOp.getCategoryChoice(scanner);
-        		if(userChoice == AdminConstants.ADMIN_CODE) { // of admin mode is activated
+        		if(userChoice == AdminConstants.ADMIN_CODE) { // if admin mode is activated
             		HandleIpOp.printAdminWelcome();
             		int adminOperationChoice;
             		do{ // while admin wants to perform certain tasks
             			HandleIpOp.printAdminMode();
-            			int adminCategory = HandleIpOp.getCategoryChoice(scanner);
+            			int adminCategory = HandleIpOp.getAdminCategoryChoice(scanner);
                 		adminOperationChoice = HandleIpOp.getAdminOperationChoice(scanner);
-                		switch (adminOperationChoice){
-                		case 1: AdminFunctionalities.addQuestion(adminCategory,scanner);break;
-                		case 2: AdminFunctionalities.editQuestion(adminCategory,scanner); break;
-                		case 3: AdminFunctionalities.deleteQuestion(adminCategory,scanner); break;
+                		switch (adminOperationChoice){ // switch for admin operations
+                		case 1: AdminFunctionalitiesImpl.addQuestion(adminCategory,scanner);break;
+                		case 2: AdminFunctionalitiesImpl.editQuestion(adminCategory,scanner); break;
+                		case 3: AdminFunctionalitiesImpl.deleteQuestion(adminCategory,scanner); break;
                 		case 4: break;
                 		}
             		}while(adminOperationChoice != GeneralConstants.FOUR_INT);
-            	}if(userChoice == 5){
+            	}else if(userChoice == AppData.getCategories().size()+1){ // if user wants to exit
             		break;
             	}else { // if user mode is activated
-            			HandleIpOp.printUserMode();
-            			GamePlayer.playGame(userChoice,scanner);
+            			HandleIpOp.printUserMode(); // welcome method for user
+            			GamePlayer.playGame(userChoice,scanner); // starts the game for category selected by the user
             	}
-        	}while(userChoice != GeneralConstants.SEVEN_INT);
-        	HandleIpOp.printFinalScores();
+        	}while(userChoice != AppData.getCategories().size()+1);
+        	HandleIpOp.printFinalScores(); // printing resuls before exiting
         	
         } catch (Exception e) {
             e.printStackTrace();

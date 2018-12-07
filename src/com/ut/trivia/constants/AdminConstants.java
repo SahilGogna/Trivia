@@ -1,6 +1,14 @@
 package com.ut.trivia.constants;
-
+/**
+ * 
+ * 
+ * @author sahilgogna
+ * Nov 29, 2018
+ */
 public interface AdminConstants {
+	/**
+	 * contains the constants used in admin functionality
+	 */
 	
 	//Admin general constants
 	public static final String WELCOME_MESSAGE = "Welcome admin!";

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"com.ut.trivia.AdminOptions"},{"l":"com.ut.trivia.constants"},{"l":"com.ut.trivia.data"},{"l":"com.ut.trivia.dto"},{"l":"com.ut.trivia.HandleInputOutput"},{"l":"com.ut.trivia.starter"},{"l":"com.ut.trivia.UserOptions"}]

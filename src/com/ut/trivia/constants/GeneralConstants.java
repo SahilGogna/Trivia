@@ -1,21 +1,24 @@
 package com.ut.trivia.constants;
 
 /**
- * this interface contains the general constants used throughout the application
  * 
  * @author sahilgogna
  * Nov 18, 2018
  */
 public interface GeneralConstants {
+	/**
+	 * this interface contains the general constants used throughout the application
+	 */
 	
 	//general constants
 	public static final String DOT = ".";
 	public static final String SPACE = " ";
 	public static final String DOT_SPACE = ". ";
-	public static final String MODE_USER = "Mode: User";
+	public static final String MODE_USER = "\n****Mode: User****\n";
 
 	//general messages
 	public static final String START_MESSAGE = "To start Trivia app. - enter one option (or special code to manage it):";
+	public static final String START_MESSAGE_ADMIN = "To start Trivia app. in admin mode - enter one option:";
 	public static final String ENTER_CHOICE = "Enter your choice: ";
 	public static final String CORRECTANSWER = "Correct Option!";
 	public static final String CORRECTANSMESSAGE = "Correct answer is option";
@@ -58,7 +61,7 @@ public interface GeneralConstants {
 	public static final String NUMBER_IP_ERROR_MESSAGE = "Please enter number only!";
 	public static final String ENTER_RIGHT_CHOICE = "Please enter right choice.";
 	
-	public static final String USER_OPTION_REQUEST = "Please enter your choice for this question";
+	public static final String USER_OPTION_REQUEST = "\nPlease enter your choice for this question";
 	
 
 }
