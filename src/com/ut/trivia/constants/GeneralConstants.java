@@ -15,6 +15,7 @@ public interface GeneralConstants {
 	public static final String SPACE = " ";
 	public static final String DOT_SPACE = ". ";
 	public static final String MODE_USER = "\n****Mode: User****\n";
+	public static final String GENERAL_MODE = "General mode";
 
 	//general messages
 	public static final String START_MESSAGE = "To start Trivia app. - enter one option (or special code to manage it):";

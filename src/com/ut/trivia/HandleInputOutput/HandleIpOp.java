@@ -65,7 +65,7 @@ public class HandleIpOp {
 			try {
 				String cateGoryChoiceText = scanner.nextLine();
 				categoryChoice = Integer.parseInt(cateGoryChoiceText);
-				if ((categoryChoice < GeneralConstants.ZERO_INT || categoryChoice > AppData.getCategories().size())
+				if ((categoryChoice < GeneralConstants.ZERO_INT || categoryChoice > AppData.getCategories().size()+1)
 						&& categoryChoice != AdminConstants.ADMIN_CODE) {
 					categoryChoice = null;
 					System.out.println(GeneralConstants.ENTER_RIGHT_CHOICE);
@@ -289,6 +289,7 @@ public class HandleIpOp {
 		for (Map.Entry<Integer, String> category : AppData.getCategories().entrySet()) {
 			System.out.println(category.getKey() + GeneralConstants.DOT_SPACE + category.getValue());
 		}
+		System.out.println((AppData.getCategories().entrySet().size() + 1) + GeneralConstants.DOT_SPACE + "Exit");
 	}
 
 	/**
@@ -312,6 +313,13 @@ public class HandleIpOp {
 		System.out.println(GeneralConstants.MODE_USER);
 	}
 
+	/**
+	 * prints user mode
+	 */
+	public static void printGeneralMode() {
+		System.out.println(GeneralConstants.GENERAL_MODE);
+	}
+	
 	/**
 	 * prints options of the input question
 	 * 
